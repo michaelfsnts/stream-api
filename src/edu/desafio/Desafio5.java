@@ -11,7 +11,7 @@ public class Desafio5 {
         OptionalDouble media = numeros.stream()
                 .filter(n -> n > 5) // Filtra os números maiores que 5
                 .mapToInt(Integer::intValue) // Converte para int
-                .average();
+                .average();// calcula a média
         if(media.isPresent()){
             System.out.println(media.getAsDouble());
         }

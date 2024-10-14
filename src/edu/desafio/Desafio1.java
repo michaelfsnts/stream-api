@@ -8,8 +8,8 @@ public class Desafio1 {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
          numeros.stream()
-                 .sorted(Integer::compareTo)
-                 .toList()
+                 .sorted(Integer::compareTo)//ordena a lista em ordem crescente
+                 .toList()//coletor adiciona a lista
                  .forEach(System.out::println);
 
     }
